@@ -1,0 +1,367 @@
+.info{
+  display:none;
+}
+
+/***************header****************/
+  header{
+        background-color: #7A0F04;
+        font-size: 35px;
+        font-weight: 500;
+        font-family: 'Baloo Bhaina', cursive;
+        /*font-family: 'Lobster', cursive;*/
+        margin-bottom: 2%;
+        color: #FBEEE6;
+        padding-left: 2%;
+        padding-top: 0.5%;
+      }
+	  .player-icon{
+		  width:3.5%;
+	  }
+	  .reel{
+		  height:60px;
+		 margin-left:-12px;		  
+	  }
+/***********header*****************/
+      body{
+        background-color: rgba(1,1,1,0.93);
+        margin: 0;
+      }
+ /******************video container**************/     
+			.background {
+				  background: rgb(0, 0, 0);
+				  margin-bottom: 0;
+				  padding-bottom:10px;
+				}
+			.margin{
+				margin-left:17%;
+			}
+			input[type=range]{
+    -webkit-appearance: none;
+}
+#videoDesc{
+    font-size: 22px;
+    color: white;
+    padding-left: 2%;
+}
+#pauseImage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+}
+#videoLoader{
+  position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    display:none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    background: #F8F9F9;
+    border: none;
+    border-radius: 50px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #CC2416;
+    margin-top: -4px;
+    border:2px solid #A61105;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background:#F8F9F9;
+}
+
+input[type=range]{
+    width: 100%;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    background: #F8F9F9;
+    border: none;
+    border-radius: 50px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #5787F7;
+
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline-offset: -1px;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: #F8F9F9;
+}
+
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #cc3300;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #F8F9F9;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background:#5787F7;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #cc3300;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #F8F9F9;
+}
+
+
+
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+#volume-bar{
+	width:75%;
+	display:inline;
+  float: right;
+  margin-top: 7%;
+}
+.volume{
+	float:right;
+	padding-top:1.5%;
+}
+
+.middle{
+	position:relative;
+	left:35%;
+	margin-left:-102px;
+}
+.middle span{
+  margin-right: 1%;
+}
+	.buttonbar{
+		background-color:black;
+	}
+	#fullscreen{
+		padding:2%;
+	}
+	.glyphicon{
+		font-size:20px;
+    color: #F8F9F9;
+	}
+  .curtimetext{
+    margin-left:2%;
+  }
+  .font{
+      font-size: 20px;
+      color: #F8F9F9
+  }
+  #volume-icon{
+    font-size: 200%;
+  }
+/***********end of video container*************/
+/*************footer****************/
+  footer{
+  left: 0;
+  bottom: 0;
+ width:100%;
+ position: fixed;;
+}
+#prev {
+ left:1%;
+ bottom:45%;
+ position:fixed;
+ height:40px;
+ width:40px;
+ font-size:20px;
+ font-weight:bold;
+ border:2px solid brown;
+ border-radius: 35%;
+ color: white;
+ background-color: black;
+ cursor: pointer;
+}
+#next {
+ right:1%;
+ bottom:45%;
+ position:fixed;
+ height:40px;
+ width:40px;
+ font-size:20px;
+ font-weight:bold;
+ border:2px solid brown;
+ border-radius: 35%;
+ color: white;
+ background-color: black;
+ cursor: pointer;
+}
+/**********end footer**********/
+
+/**********to stop default controls of video tag**********/
+video::-webkit-media-controls {
+  display:none !important;
+}
+
+/*controlbar for fullscreen*/
+  .fullscreenControl{
+    z-index: 9999999999999999;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    left: 50%;
+    margin-left: -50%;
+    opacity:0;
+  }
+
+  /***********responsive************/
+			@media (max-width:767px) {
+				.margin{
+					margin-left:0;
+					width:100%;
+				}
+        #fullscreen{
+          display:none;
+        }
+        #videoLoader{
+          display: none;
+        }
+        .middle{
+          margin-top: 1%;
+        }
+			}
+      @media (max-width:768px) {
+        #prev,#next{
+          bottom:1%;
+          position:fixed;
+        }
+        #fullscreen{
+          display:none;
+        }
+        #videoLoader{
+          display: none;
+        }
+        .middle{
+          margin-top: 1%;
+        }
+      }
+      @media (max-width:670px) {
+        #prev {
+         position:absolute;;
+         bottom: 1%;
+        float: left;
+
+        }
+        #next {
+          float: right;
+          position:absolute;
+          bottom: 1%;
+
+        }
+        #videoLoader{
+          display: none;
+        }
+        footer{
+          position: relative;
+        }
+        #fullscreen{
+          display:none;
+        }
+        .middle{
+          margin-top: 1%;
+        }
+      }
+      @media (min-width:320px) and (max-width:767px) {
+          #prev,#next{
+          bottom:1%;
+          position:fixed;
+          }
+          header{
+            margin-bottom: 10%;
+          }
+          #fullscreen{
+            display:none;
+          }
+          .glyphicon,#volume-icon,#curtimetext,#durtimetext{
+              font-size:12px;
+            }
+          #volume-bar{
+              margin-top:5%;
+              width: 60%;
+          }
+          #videoLoader{
+            display: none;
+          }
+        .buttons{
+        width:20%;
+        }
+        .middle{
+          left:40%;
+        }
+          .volume{
+            width: 30%;
+          }
+          .buttons{
+              margin-left:0%;
+          }
+          .volume{
+              float:right;
+          }
+          .middle{
+          margin-top: 1%;
+        }
+        }
+        @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+          header{
+            margin-bottom: 20%;
+          }
+          #fullscreen{
+            display:none;
+          }
+          #videoLoader{
+            display: none;
+          }
+          .middle{
+          margin-top: 1%;
+        }
+        }
+/****************responsive***************/

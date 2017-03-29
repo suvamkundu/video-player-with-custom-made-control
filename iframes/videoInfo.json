@@ -1,0 +1,25 @@
+[
+    {
+      "video":"http://vjs.zencdn.net/v/oceans.mp4",
+      "videoName":"A Glimpse Of Ocean",
+      "poster":"https://drive.google.com/uc?id=0B-FCadppT4zJeVNzMDRrd2hPRTQ"
+    },
+
+    {
+      "video":"https://drive.google.com/uc?id=0B-FCadppT4zJcXJHRXlEdlhOc2c",
+      "videoName":"MINUSCULE 'Valley Of Lost Ants'",
+      "poster":"https://drive.google.com/uc?id=0B-FCadppT4zJbHRZRC1GVkF1LXM"
+    },
+
+    {
+      "video":"http://media.w3.org/2010/05/sintel/trailer.webm",
+      "videoName":"Sintel Trailer",
+      "poster":"https://drive.google.com/uc?id=0B-FCadppT4zJR2JldU1Rbm1QTzA"
+    },
+
+    {
+      "video":"https://drive.google.com/uc?id=0B-FCadppT4zJbVpYQlh1dFJfR28",
+      "videoName":"Moana Official Trailer",
+      "poster":"https://drive.google.com/uc?id=0B-FCadppT4zJLXpoeVg1SjIxQ3c"
+    }
+]

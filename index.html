@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>PlayMyVideo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+        <link rel="stylesheet" href="css/videoPlayer.css"/>
+		<link type="icon/png" href="icon/videoplayer.png"/>
+		<link rel="shortcut icon" href="icon/icon.png" />
+		 <!--[if lte IE 8]>
+       		 <link rel="stylesheet" type="text/css" href="css/ie.css" />
+      	<![endif]-->
+		<!--[if IE]>
+			<style>
+				.volume{
+					width:100%;
+				}
+			</style>
+		<![endif]-->
+      		
+
+    </head>
+    <body>
+	<div class="info" >
+				<img id="oops" src="image/oops.png" alt="oops" />
+						<p id="text">This Video Player is not supported in Internet Explorer Version 8.0 or below it.</p>
+				</div>
+	<div class="other">
+      <header>
+		<img src="icon/logo.ico" alt="" class="player-icon">
+        PlayMyVideo
+		<img src="icon/filmstrip.png" alt="" class="reel">
+      </header>
+
+			<div class="container background">
+			  <div class="row">
+          <p id="videoDesc">A Glimpse Of Ocean</p>
+					<div class="col-sm-8 margin">
+						<div class="embed-responsive embed-responsive-16by9" >
+							<video id="Video1" poster="https://drive.google.com/uc?id=0B-FCadppT4zJeVNzMDRrd2hPRTQ" preload="metadata">
+								<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+							</video>
+						</div>
+            <img id='pauseImage' src="image/play--1-_6yei9a67.png" alt="pauseicon">
+            <img id='videoLoader' src="image/loading.gif" alt='loading'>
+					</div>
+				 </div>
+			</div>
+
+			<div class="container buttonbar">
+				<div class="controls">
+					<span class="seek-icon"><input type="range" id="seek-bar"  min="0" max="100" value="0"></span>
+					<span class="buttons">
+						<span class="glyphicon glyphicon-fullscreen" id="fullscreen" data-toggle="tooltip" title="Double click for fullscreen view">
+            </span>
+            <span id="curtimetext" class="font">00:00 /</span>
+            <span id="durtimetext" class="font">00:00</span>
+						<span class='middle'>
+							<span class="glyphicon glyphicon-repeat" id="restart" data-toggle="tooltip" title="Replay"></span>
+							<span class="glyphicon glyphicon-fast-backward" id="rew" onclick="skip(-10)"></span>
+							<span class="glyphicon glyphicon-play" id="play"></span>
+							<span class="glyphicon glyphicon-fast-forward" id="fastFwd" onclick="skip(10)"></span>
+						</span>
+					</span>
+					<span class="volume">
+						<span class="glyphicon glyphicon-volume-up" id="volume-icon"></span>
+						<input type="range" id="volume-bar" min="0" max="100" step="1" value="100">
+					</span>
+				</div>
+			</div>
+
+  <footer>
+  		<nav aria-label="..." class="container change-page" style='text-align:center;'>
+  				  <button id="prev" data-toggle="tooltip" title="Back"><span class="glyphicon glyphicon-chevron-left"></span></button>
+  				  <button id="next" data-toggle="tooltip" title="Next"><span class="glyphicon glyphicon-chevron-right"></span></button>
+  		</nav>
+  </footer>
+
+  
+  <script src="js/videoPlayer.js"></script>
+  <script src="js/myBook.js"></script>
+  </div>
+    </body>
+	
+</html>

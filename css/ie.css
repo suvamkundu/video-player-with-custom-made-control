@@ -1,0 +1,27 @@
+
+body{
+        background-color: rgb(1,1,1);
+        margin: 0;
+      }
+.info{
+			position : absolute;
+			left : 20%;
+			transform : translate(-50%,-50%);
+			background:rgba(94, 192, 235 ,0.5);
+            display:block;
+		}
+		#oops{
+		position : relative;
+		margin-left:28%;
+		margin-top:6%;
+		margin-bottom:6%;
+		}
+		#text{
+			font-family: 'Signika', sans-serif;
+			font-size:24px;
+			font-weight:bold;
+			color: #FBEEE6
+		}
+        .other{
+            display:none;
+        }
